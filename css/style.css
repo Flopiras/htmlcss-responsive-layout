@@ -151,6 +151,35 @@ h3{
     padding: 3rem;
 }
 
+.card_planning{
+    text-align: left;
+}
+
+.card_planning h2{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.card_white{
+    text-align: center;
+}
+
+.card_white p{
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 2rem;
+}
+
+.arrow_down{
+    padding: 1rem;
+    background-color: var(--purple);
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    margin: 2rem auto;
+}
+
 .top_testimonials{
     padding: 2rem;
 }
@@ -255,5 +284,17 @@ footer a{
 
     .card_features{
         flex-basis: calc(100% / 3 - 2rem);
+    }
+
+    .row_planning{
+        display: flex;
+    }
+
+    .row_planning .card_white{
+        align-self: flex-end;
+    }
+
+    .big{
+        margin: 6rem 0;
     }
 }
