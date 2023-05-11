@@ -6,7 +6,7 @@
 }
 
 body{
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .flex{
@@ -30,6 +30,10 @@ ul{
 /* TEMPORARY */
 .border{
     border: 2px dashed black;
+}
+
+.card{
+    min-height: 200px;
 }
 
 /* ROOTS */
@@ -59,9 +63,27 @@ nav .nav_1200{
     display: none;
 }
 
+/* MAIN */
+
+/* jumbotron */
+.card{
+    margin: 1rem;
+}
+
 /* MEDIA QUERY */
 @media screen and (min-width: 768px) {
-    
+    .jumbo_content .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        flex-basis: calc(100% / 3 - 2rem);
+    }
+
+    .card_lg{
+        flex-basis: calc(100% / 3 * 2 - 2rem);
+    }
 }
 
 @media screen and (min-width: 1200px) {
