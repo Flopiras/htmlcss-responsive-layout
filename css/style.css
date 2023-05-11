@@ -18,3 +18,12 @@
 .border{
     border: 2px dashed black;
 }
+
+/* ROOTS */
+:root{
+    --blue: #0084fd;
+    --lightblue: #b5ddff;
+    --purple: #9792e4;
+    --orange: #fdc15f;
+    --dark: #333333;
+}
