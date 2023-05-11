@@ -37,10 +37,11 @@ ul{
     padding: 0.7rem 0.5rem;
     border-radius: 30px;
     margin: 0 1rem;
+    display: inline-block;
 }
 
 .card{
-    margin: 1rem;
+    margin: 1.5rem;
     border-radius: 30px;
     padding: 1rem;
 }
@@ -61,14 +62,24 @@ section{
     color: black;
 }
 
-/* TEMPORARY */
+.bg_lightblue{
+    background-color: var(--lightblue);
+    color: #5a6e7f;
+}
+
+.bg_blue{
+    background-color: var(--blue);
+    color: white;
+}
+
+/* TEMPORARY*/
 /* .border{
     border: 2px dashed black;
-} */
+} 
 
 .card{
     min-height: 200px;
-}
+} */
 
 /* ROOTS */
 :root{
@@ -82,13 +93,13 @@ section{
 /* HEADER */
 header{
     padding: 1rem;
-    background-color: var(--blue);
-    color: white;
     position: fixed;
+    z-index: 1;
     top: 0;
     width: 100%;
     height: 5rem;
 }
+
 header nav{
     justify-content: space-between;
     align-items: center;
@@ -101,6 +112,37 @@ nav .nav_1200{
 }
 
 /* MAIN */
+.download{
+    font-size: 1.2rem;
+    margin: 1rem;
+    padding: 0.5rem 3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+h3{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.card_jumbo p{
+    font-weight: 600;
+    padding: 1rem 2rem;
+    text-align: left;
+    line-height: 1.8rem;
+}
+
+.card_jumbo img{
+    width: 300px;
+    position: relative;
+    bottom: -1rem;
+    left: 3rem;
+}
+
+.blue{
+    color: var(--blue);
+}
+
 .top_testimonials{
     padding: 2rem;
 }
@@ -136,11 +178,11 @@ footer a{
     }
 
     .card_jumbo{
-        flex-basis: calc(100% / 3 - 2rem);
+        flex-basis: calc(100% / 3 - 3rem);
     }
 
     .card_jumbo_lg{
-        flex-basis: calc(100% / 3 * 2 - 2rem);
+        flex-basis: calc(100% / 3 * 2 - 3rem);
     }
 
     .row_features{
@@ -149,7 +191,7 @@ footer a{
     }
 
     .card_features{
-        flex-basis: calc(50% - 2rem);
+        flex-basis: calc(50% - 3rem);
     }
 
     .about_us{
@@ -175,6 +217,26 @@ footer a{
 
     nav a{
         padding: 0 10px;
+    }
+
+    .card_jumbo_lg{
+        display: flex;
+    }
+
+    .card_jumbo_content{
+        text-align: left;
+    }
+
+    .card_jumbo_content p{
+        padding: 0;
+    }
+
+    .download{
+        margin-left: 0;
+    }
+
+    .card_jumbo img{
+        left: 0;
     }
 
     .row_planning{
