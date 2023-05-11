@@ -27,6 +27,16 @@ ul{
     list-style: none;
 }
 
+.card{
+    margin: 1rem;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+section{
+    padding-bottom: 2rem;
+}
+
 /* TEMPORARY */
 .border{
     border: 2px dashed black;
@@ -34,9 +44,6 @@ ul{
 
 .card{
     min-height: 200px;
-    margin: 1rem;
-    border-radius: 30px;
-    padding: 1rem;
 }
 
 /* ROOTS */
@@ -77,6 +84,13 @@ nav .nav_1200{
 }
 
 /* MAIN */
+.top_testimonials{
+    padding: 2rem;
+}
+
+.testimonials{
+    text-align: center;
+}
 
 /* MEDIA QUERY */
 @media screen and (min-width: 768px) {
