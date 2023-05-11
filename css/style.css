@@ -6,7 +6,7 @@
 }
 
 body{
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .flex{
@@ -34,7 +34,9 @@ ul{
 }
 
 section{
+    padding-top: 2rem;
     padding-bottom: 2rem;
+    text-align: center;
 }
 
 /* TEMPORARY */
@@ -88,23 +90,28 @@ nav .nav_1200{
     padding: 2rem;
 }
 
-.testimonials{
-    text-align: center;
-}
-
 /* MEDIA QUERY */
 @media screen and (min-width: 768px) {
-    .jumbo_content .row{
+    .row_jumbo{
         display: flex;
         flex-wrap: wrap;
     }
 
-    .card{
+    .card_jumbo{
         flex-basis: calc(100% / 3 - 2rem);
     }
 
-    .card_lg{
+    .card_jumbo_lg{
         flex-basis: calc(100% / 3 * 2 - 2rem);
+    }
+
+    .row_features{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card_features{
+        flex-basis: calc(50% - 2rem);
     }
 }
 
@@ -130,5 +137,9 @@ nav .nav_1200{
         display: flex;
         justify-content: center;
         padding: 2rem;
+    }
+
+    .card_features{
+        flex-basis: calc(100% / 3 - 2rem);
     }
 }
