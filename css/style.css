@@ -90,6 +90,11 @@ nav .nav_1200{
     padding: 2rem;
 }
 
+.about_us_content,
+.owner{
+    padding: 1rem;
+}
+
 /* MEDIA QUERY */
 @media screen and (min-width: 768px) {
     .row_jumbo{
@@ -113,6 +118,11 @@ nav .nav_1200{
     .card_features{
         flex-basis: calc(50% - 2rem);
     }
+
+    .about_us{
+        display: flex;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
